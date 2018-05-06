@@ -27,9 +27,13 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(user.getText().toString().equals("") && pas.getText().toString().equals(""))
+                if(user.getText().toString().equals(""))
                 {
-                    Toast.makeText(context,"فیلدها را پر کنید",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"نام کاربری را وارد کنید",Toast.LENGTH_SHORT).show();
+                }
+                else if(pas.getText().toString().equals(""))
+                {
+                    Toast.makeText(context,"کلمه عبور را وارد کنید",Toast.LENGTH_SHORT).show();
                 }
                 else
                 {

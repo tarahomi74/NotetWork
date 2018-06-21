@@ -18,13 +18,33 @@
         android:paddingRight="10dp"
         android:textColorHint="@color/black"
         android:layout_centerInParent="true"
-        android:hint="name and family"
+        android:hint="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/family"
+        android:inputType="text"
+        android:layout_below="@+id/name"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/black"
+        android:layout_centerInParent="true"
+        android:hint="family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/user_name"
+        android:inputType="text"
+        android:layout_below="@+id/family"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/black"
+        android:layout_centerInParent="true"
+        android:hint="user name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/phon"
         android:inputType="phone"
-        android:layout_below="@+id/name"
+        android:layout_below="@+id/user_name"
         android:paddingRight="10dp"
         android:textColorHint="@color/black"
         android:layout_centerInParent="true"
